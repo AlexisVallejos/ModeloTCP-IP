@@ -1,0 +1,489 @@
+:root {
+  --primary: #a514ce;
+  --nav-background: #141318;
+  --nav-item-bg-hover: #79797920;
+  --navbar-height: 4rem;
+  --text-gray: #252525;
+  --text-white: white;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    cursor: default;
+
+}
+
+body {
+   
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    height: 100vh;
+    background: var(--background);
+
+  }
+   
+
+   header {
+    padding-top: 60px; /* add padding to compensate for fixed navbar */
+    background-color: #f8f9fa;
+    
+    text-align: center;
+   }
+   
+   section {
+    
+    padding: 60px;
+   }
+   
+   h1, h2 {
+    font-size: 3em;
+    color: #fffffff1;
+    text-align: center;
+   font-family: helvetica;
+   }
+   .modulos h2
+   {
+    color: #141318;
+   }
+
+  .container {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+  }
+  
+
+
+    
+  
+  img {
+    padding-left: 10%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .text {
+    font-size: 20px;
+    padding-left: 20px;
+  }
+  .text1 {
+    font-size: 20px;
+    padding-right: 20px;
+  }
+
+
+
+  .nav
+  {
+    background-image: url('https://lunia.es/wp-content/uploads/2023/11/tipos-ciberseguridad.jpg');
+    filter: brightness(75%);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    
+  }
+
+  .nav h1{
+    color: #ffffff;
+    padding-top: 1.7em;
+      font-family: "Bebas Neue", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 8em;
+      text-shadow:2px 4px 4px #7031ef;
+    
+  }
+
+
+  .prueba{
+    width: 100%;
+    height: 100rem;
+    position:absolute;
+  }
+
+
+.relleno{
+  width: 100%;
+  height: 12rem;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+}
+
+
+.navigation {
+  
+  position: static;
+  background-color: #323232;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  flex-direction: row;
+  list-style-type: none;
+  align-items: center;
+}
+
+.navigation>li {
+  
+  position: relative;
+  transition: all 0.5s ease;
+  flex-grow: 1;
+  user-select: none;
+}
+
+.navigation a {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.75rem 1.5rem;
+  color: var(--text-white);
+  min-height: 4rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  background-image: linear-gradient(to right,
+          var(--primary),
+          var(--primary) 50%,
+          var(--text-white) 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.7s ease;
+  gap: 0.25rem;
+}
+
+.navigation a:hover {
+  background-position: 0;
+}
+
+.navigation li:hover {
+  background: var(--nav-item-bg-hover);
+}
+
+.navigation>li:hover>a {
+  background-position: 0;
+}
+
+.navigation>li>a>svg {
+  width: 1rem;
+  height: 1rem;
+  transition: all 0.7s ease;
+}
+
+.navigation>li:hover>a>svg {
+  stroke: var(--primary);
+  transform: rotate(90deg);
+}
+
+.subnavigation__wrapper {
+  overflow: hidden;
+  max-height: 0;
+  position: absolute;
+  transition: max-height 0.3s ease-in-out;
+  background-color: var(--nav-background);
+  width: 100%;
+}
+
+.navigation>li:hover .subnavigation__wrapper {
+  max-height: 20rem;
+  top: var(--navbar-height);
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.contenedor
+{
+  display: grid;
+  
+  background-color: #12151a;
+  background-image: radial-gradient(37.88% 68.62% at 10% 0, rgba(92, 9, 148, 0.3) 0, rgba(81, 0, 124, 0) 80%),
+ 
+   radial-gradient(100% 28.09% at 100% 0%, rgba(170, 10, 233, 0.2) 0, rgba(101, 0, 124, 0.1) 80%, rgba(101, 0, 124, 0) 100%),
+  
+    radial-gradient(74.84% 135.56% at 100% 10%, rgba(85, 0, 124, 0.5) 0, #13161c 80%),
+    linear-gradient(to bottom, #5c1a96bf, #4a00e0);
+ background-repeat: no-repeat;
+}
+
+
+.container_1 {
+  grid-column: 2 / 2; /* Ocupa la segunda columna */
+  grid-row: 1 / 2; /* Ocupa la primera fila */
+  margin-bottom: 2rem;
+  
+}
+.container_1 p 
+{
+  color: whitesmoke;
+}
+
+.container_2 {
+  
+  grid-column: 1 / 2; /* Ocupa la primera columna */
+  grid-row: 1 / 3; /* Ocupa la primera fila */
+  align-self: center; /* Centra verticalmente el contenido */
+}
+
+.container_2 h2 :hover{
+  transform: translateY(-7px);
+  text-shadow: 0px 10px 10px black;
+}
+
+.container_2 img {
+  max-width: 100%; /* Ajusta el ancho máximo de la imagen */
+  max-height: 100%; /* Ajusta la altura máxima de la imagen */
+  display: block; /* Elimina los márgenes blancos */
+}
+
+.container_3 {
+  grid-column: 2 / 2; /* Ocupa la segunda columna */
+  grid-row: 1 / 3; /* Ocupa la primera fila */
+
+}
+
+.container_4 {
+  grid-column: 1 / 2; /* Ocupa la primera columna */
+  grid-row: 1 / 2; /* Ocupa la primera fila */
+  /* Centra verticalmente el contenido */
+  
+}
+.container_4 p
+{
+  color: white;
+}
+
+.container_3 img {
+  max-width: 100%; /* Ajusta el ancho máximo de la imagen */
+  max-height: 100%; /* Ajusta la altura máxima de la imagen */
+  display: block; /* Elimina los márgenes blancos */
+  
+}
+.card-container {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.card .front-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
+}
+
+.card .front-content p {
+  font-size: 32px;
+  font-weight: 700;
+  opacity: 1;
+  background: linear-gradient(-45deg, #d229f8 0%, #ff0f7b 100% );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
+}
+
+.card .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  background: linear-gradient(-45deg, #e729f8 0%, #ff0f7b 100% );
+  color: #e8e8e8;
+  
+  line-height: 1.5;
+  border-radius: 5px;
+  pointer-events: none;
+  transform: translateY(96%);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card .content .heading {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.card:hover .content {
+  transform: translateY(0);
+}
+
+.card:hover .front-content {
+  transform: translateY(-30%);
+}
+
+.card:hover .front-content p {
+  opacity: 0;
+}
+
+.todo
+{
+
+  background-color: #13161c;
+ background-image:  radial-gradient(74.84% 135.56% at 100% 10%, rgba(85, 0, 124, 0.5) 0, #13161c 80%);
+
+}
+
+
+.anidado
+{
+ 
+  display: grid;
+  gap: 1rem;
+  
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
+}
+
+
+
+.card-container {
+  display: flex;
+  justify-self: center;
+  flex: 0 0 300px; /* ancho fijo para cada card */
+  margin: 8px;
+  scroll-snap-align: start;
+}
+
+
+.card-ft {
+  display: grid;
+  grid-template-columns: auto;
+  width: 400px;
+  height: 440px;
+  margin: 0 auto;
+  background-color: #24233b;
+  border-radius: 8px;
+  z-index: 1;
+  box-shadow: 0px 10px 10px rgb(73, 70, 92);
+  transition: 0.5s;
+}
+
+.card-ft:hover {
+  display: grid;
+  grid-template-columns: auto;
+  transform: translateY(-7px);
+  box-shadow: 0px 10px 10px black;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.circle {
+  padding: 0 4px;
+}
+
+.circle2 {
+  display: inline-block;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+  border-radius: 5px;
+}
+
+.red {
+  background-color: #ff605c;
+}
+
+.yellow {
+  background-color: #ffbd44;
+}
+
+.green {
+  background-color: #00ca4e;
+}
+
+.header-ft {
+  margin: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+#title2 {
+  color: white;
+  padding-left: 50px;
+  font-size: 15px;
+}
+
+.code-container img{
+  
+  text-align: center;
+}
+#code {
+  width: 270px;
+  height: 350px;
+  resize: none;
+  background-color: rgb(73, 70, 92);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  padding: 10px;
+}
+#code:focus {
+  outline: none !important;
+}
+.code-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.code-container img {
+  border-radius: 5px;
+  padding: 0;
+  margin: 10px;
+  width: 97%;
+  height: 25em;
+}
+
+.modulos h2
+{
+  color: rgba(255, 255, 255, 0.308);
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 100px;
+  
+}
+
+@media screen and (max-width : 968px){
+  .container_2{
+    grid-row: 1 / -1;
+
+  }
+}
