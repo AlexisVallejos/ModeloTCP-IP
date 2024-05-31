@@ -112,6 +112,7 @@ body {
 }
 
 nav {
+  z-index: 6;
   position: sticky;
   top: 0;
   display: flex;
@@ -122,7 +123,7 @@ nav {
 
 
 .navigation {
-  
+  z-index: 500;
   position: static;
   background-color: #323232;
   width: 100%;
@@ -389,7 +390,7 @@ nav {
 }
 
 .card-ft:hover {
-  display: grid;
+  z-index: 1;
   grid-template-columns: auto;
   transform: translateY(-7px);
   box-shadow: 0px 10px 10px black;
@@ -487,3 +488,4 @@ nav {
 
   }
 }
+
